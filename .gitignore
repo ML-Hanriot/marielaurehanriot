@@ -1,5 +1,6 @@
 
 ###> symfony/framework-bundle ###
+.env
 /.env.local
 /.env.local.php
 /.env.*.local
@@ -24,4 +25,10 @@ yarn-error.log
 ###> phpunit/phpunit ###
 /phpunit.xml
 .phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> Configurations spécifiques à vs code ###
+.vscode/
+###> Configurations spécifiques à vs code ###
+.env
 ###< phpunit/phpunit ###
