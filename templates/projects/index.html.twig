@@ -1,20 +1,215 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProjectsController!{% endblock %}
+{% block title %}Mes projets{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<h1 class="text-3xl font-bold flex justify-center my-16">Mes projets</h1>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<h2 class="text-xl font-bold mt-16 mb-8 flex justify-center">Projets personnels réalisés avant ma formation</h2>
+<div class="flex justify-center">
+{# projet Entre Queers #}
+    <div class=" mx-4 w-fit bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <img class="rounded-t-lg" src="media/entre_queers1.jpg" alt="site concours en cours" />
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Projet Entre Queers</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"><span class="font-bold">Projet de toute une vie :</span> <br>o réalisé d'abord avec Wordpress <br>o réalisé ensuite avec Wordpress et Divi <br> o puis finalement réalisé en vanilla HTML et CSS</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Dernière stack utilisée: vanilla HTML et CSS </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">IDE : VS Code</p><br>
+        {# boutons #}
+        <div class="flex justify-center space-x-4">
+            <a href="https://github.com/ML-Hanriot/entrequeers" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir le code
+               </a>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir les visuels
+            <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+            </a>
+        </div>
+    </div>
+    </div>
+    {# projet Helium #}
+    <div class=" mx-4 w-fit bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <img class="rounded-t-lg" src="media/helium1.jpg" alt="site concours en cours" />
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Projet Hélium</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Exercice de la formation <a href="https://fromscratch.podia.com/parcours-complet-mastering-front-end" target="_blank" class="underline text-blue-400">Mastering Frontend</a> <br> de "From Scratch"</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Stack utilisée: vanilla HTML et CSS </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">IDE : VS Code</p>
+        {# boutons #}
+        <div class="flex justify-center space-x-4">
+            <a href="https://github.com/ML-Hanriot/marielaurehanriot.fr-ancien-" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir le code
+               </a>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir les visuels
+            <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+            </a>
+        </div>
+    </div>
+    </div>
+    {# projet Ancien MLH.fr #}
+    <div class=" mx-4 w-fit bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <img class="rounded-t-lg" src="media/mlh_old1.jpg" alt="site concours en cours" />
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ancien Portfolio</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Réalisé juste avant ma formation, pour montrer <br>mon niveau en HTML / CSS aux entreprises <br>pour trouver un stage</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Stack utilisée: vanilla HTML et CSS </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">IDE : VS Code</p><br>
+        {# boutons #}
+        <div class="flex justify-center space-x-4">
+            <a href="https://github.com/ML-Hanriot/marielaurehanriot.fr-ancien-" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir le code
+               </a>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir les visuels
+            <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+            </a>
+        </div>
+    </div>
+    </div>
+</div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/Marie LH/Project/src/Controller/ProjectsController.php</code></li>
-        <li>Your template at <code>C:/Users/Marie LH/Project/templates/projects/index.html.twig</code></li>
-    </ul>
+<h2 class="text-xl font-bold mt-16 mb-8 flex justify-center">Projets réalisés en formation</h2>
+{# card container #}
+<div class="flex justify-center">
+    {# projet sortir.com #}
+    <div class=" mx-4 w-fit bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <img class="rounded-t-lg" src="media/sortir1.jpg" alt="page d'accueil Sortir.com" />
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Projet Sortir.com</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Projet réalisé en équipe de 4 en formation.</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Stack utilisée: PHP, Symfony, Twig, CSS, Doctrine</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">IDE : PHP Storm</p>
+        {# boutons #}
+          <div class="flex justify-center space-x-4">
+             <a href="https://github.com/ML-Hanriot/sortir-Web" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir le code
+               </a>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir les visuels
+            <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+        </div>
+    </div>
+    </div>
+    {# projet memory #}
+    <div class=" mx-4 w-fit bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <img class="rounded-t-lg" src="media/memory1.jpg" alt="page d'accueil Memory" />
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Projet Memory</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Projet réalisé seule en formation.</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Stack utilisée: HTML5, CSS3, Javascript</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">IDE : VS Code</p>
+        {# boutons #}
+        <div class="flex justify-center space-x-4">
+            <a href="https://github.com/ML-Hanriot/memory" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir le code
+               </a>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir les visuels
+            <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+    </div>
+    </div>
+    {# projet Filmothèque #}
+    <div class="mx-4 w-fit bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg" src="media/filmotheque1.jpg" alt="page d'accueil Filmothèque" />
+        <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Projet Filmothèque</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Projet réalisé seule en formation.</p>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Stack utilisée: Java, Java Springboot, thymeleaf, CSS</p>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">IDE : Eclipse</p>
+        {# boutons #}
+         <div class="flex justify-center space-x-4">
+            <a href="#" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir le code
+               </a>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir les visuels
+            <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+    </div>
+    </div>
+</div>
+
+<h2 class="text-xl font-bold mt-16 mb-8 flex justify-center">Projet de stage en fin de formation</h2>
+ {# projet X #}
+ <div class="flex justify-center">
+    <div class="mx-4 w-fit bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <img class="rounded-t-lg" src="media/projet_x.jpg" alt="page d'accueil Memory" />
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Projet "X" (sous NDA)</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Projet réalisé en stage de fin de formation</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Stack utilisée: PHP, Symfony, Twig, Tailwind,<br> Javascript, FullCalendar </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">IDE : PHP Storm</p>
+         <a href="#" target="_blank" class="flex justify-center items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir le code
+               </a>
+    </div>
+    </div>
+    </div>
+
+<h2 class="text-xl font-bold mt-16 mb-8 flex justify-center">Projets personnels d'après formation</h2>
+
+<div class="flex justify-center mb-8">
+{# projet new MLH.fr #}
+    <div class=" mx-4 w-fit bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <img class="rounded-t-lg" src="media/soon.jpg" alt="site concours en cours" />
+    <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nouveau Porfolio</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Terminé :  vous êtes dessus 😁</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Stack utilisée: PHP, Symfony, Twig, Tailwind,<br> Javascript </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">IDE : VS Code</p>
+        {# boutons #}
+        <div class="flex justify-center space-x-4">
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir le code
+               </a>
+            {# <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir les visuels
+            <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+            </a> #}
+        </div>
+    </div>
+    </div>
+{# projet Concours #}
+    <div class=" mx-4 w-fit bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg" src="media/concours1.jpg" alt="site concours en cours" />
+        <div class="p-5">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Site de Concours</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Stack utilisée : PHP, Symfony, Twig, Tailwind,<br> Javascript </p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">IDE : VS Code</p>
+        {# <p class="mb-3 font-bold text-gray-700 dark:text-gray-400">EN PROJET</p> #}
+        {# boutons #}
+        {# <div class="flex justify-center space-x-4">
+            <a href="#" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir le code
+               </a>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Voir les visuels
+            <svg class="w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+            </a> #}
+        </div>
+    </div>
+</div>
+
 </div>
 {% endblock %}
