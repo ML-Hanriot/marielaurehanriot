@@ -1,21 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Bienvenue!{% endblock %}
+{% block title %}Bienvenue sur MLH !{% endblock %}
 
 {% block body %}
-<h1 class="text-3xl text-center py-8">Qui suis-je ?</h1>
+<h1 class="text-2xl md:text-3xl text-center py-8 font-bold">Qui suis-je ?</h1>
 {# présentation #}
-{# <h2 class="text-2xl text-center py-8">Présentation</h2> #}
-<p class="w-4/5 mx-auto">Passionnée par le développement web depuis mon adolescence, j’ai d’abord appris en autodidacte à créer des sites web avec WordPress.org, puis avec Divi. Cependant, souhaitant avoir un contrôle total sur le Front-End, j'ai appris HTML et CSS, afin de dépasser les limitations des solutions No-code.<br>
+<div class="w-4/5 mx-auto">
+    <p class=" text-justify">Passionnée par le développement web depuis mon adolescence, j’ai d’abord appris en autodidacte à créer des sites web avec WordPress.org, puis avec Divi. Cependant, souhaitant avoir un contrôle total sur le Front-End, j'ai appris HTML et CSS, afin de dépasser les limitations des solutions No-code.<br>
 Dans le cadre de ma reconversion professionnelle, j'ai intégré l’école ENI en avril 2024 pour suivre la formation Développeur Web et Web Mobile. Cette formation m’a permis de renforcer mes compétences techniques et d'en apprendre de nouvelles, que j’ai mises en pratique lors d’un stage de deux mois en utilisant la Stack Symfony, Twig, Tailwind et Full Calendar.<br>
 J'ai récemment été acceptée pour la formation de Concepteur Développeur d'Application en alternance et je suis actuellement à la recherche d'une entreprise qui souhaiterait m'accompagner dans cette nouvelle étape professionnelle.<br>
 Je suis motivée par l’opportunité d’appliquer les connaissances acquises en formation et en stage, tout en continuant à évoluer dans un environnement qui encourage le soutien et la montée en compétences de ses collaborateurs.<br>
-
 À bientôt j'espère !
-
+    </p>
+</div>
 {# formation ENI #}
-<h2 class="text-2xl text-center py-12">Contenu de la formation Développeur web et web mobile réalisée à l'ENI</h2>
-<div class="flex items-center justify-center mb-16">
+<h2 class="text-lg md:text-2xl text-center py-12 font-bold">Contenu de la formation Développeur web réalisée à l'ENI</h2>
+<div class="flex items-center justify-center mb-7 md:mb-16">
   <ul class="list-disc pl-5 text-left">
     <li>L’algorithmique</li>
     <li>Initiation à la programmation procédurale avec Java</li>
@@ -39,10 +39,11 @@ Je suis motivée par l’opportunité d’appliquer les connaissances acquises e
 </div>
 
 {# Début de ligne #}
+{# visible en md #}
 {% set points = ['Ma Stack préférée', 'Mes Projets', 'Mon Matos', 'Mes remerciements'] %}
 
-<div class="relative w-4/5 mx-auto mt-10 mb-42">
-    <!-- Ligne horizontale qui passe exactement au centre des points -->
+<div class="hidden md:block relative w-4/5 mx-auto mt-10 mb-65">
+    <!-- Ligne horizontale qui passe en haut des points -->
     <div class="absolute top-1/2 left-0 right-0 transform -translate-y-1/2 border-t-2 border-gray-300"></div>
 
     <!-- Conteneur des points -->
@@ -102,6 +103,38 @@ Je suis motivée par l’opportunité d’appliquer les connaissances acquises e
             </div>
         {% endfor %}
     </div>
+</div>
+
+
+{# ligne en tel et tablette #}
+<div class="md:hidden">
+    <h2 class="text-lg md:text-2xl text-center py-8 font-bold">Ma stack préférée</h2>
+                           <ul class="list-disc pl-12 text-left">
+                           <li>PHP / Symfony</li>
+                           <li>Moteur de templates Twig</li>
+                           <li>Framework CSS Tailwind</li>
+                           <li>ORM Doctrine</li>
+                           <li>IDE PHP Storm / VS Code</li>
+                           <li>Github</li>
+                        </ul>
+                    <h2 class="text-lg md:text-2xl text-center py-8 font-bold">Mon matos</h2>
+                       <ul class="list-disc pl-12 text-left">
+                           <li>Windows 10</li>
+                           <li>Trois écrans (Asus et Philips)</li>
+                           <li>Processeur AMD Ryzen 7 5700G</li>
+                           <li>Carte graphique NVIDIA GeForce RTX 3060</li>
+                           <li>32Go de RAM</li>
+                           <li>1 SSD 500Go + 1 SSD 2To</li>
+                        </ul><br>
+                        <p class="pl-12">Oui, je l'aime mon ordi 🥰</p>
+                    <h2 class="text-lg md:text-2xl text-center py-8 font-bold">Mes remerciements</h2>
+                     <ul class="list-disc pl-12 text-left pb-8">
+                           <li>Tous les profs de l'ENI (mention spéciale à Fred)</li>
+                           <li>Emma de l'ENI pour son écoute</li>
+                           <li>Tous mes collègues de formation</li>
+                           <li>Emma et Ryan qui m'ont beaucoup appris pendant mon stage</li>
+                           <li>Mes amis et ma famille pour leur compréhension car mon emploi du temps chargé m'a empêché de les voir pendant plusieurs semaines, voire plusieurs mois</li>
+                        </ul>
 </div>
 
 <!-- JavaScript pour gérer l'affichage des cartes et la rotation des flèches -->
